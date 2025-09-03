@@ -1,0 +1,3 @@
+{"kafka_ts":"2025-08-23T16:22:22.320-05:00","op":"c","ts_ms":1755984141923,"customer_id":"c_bad9","customer_unique_id":"u_bad9","customer_city":"Nowhere","customer_state":"XXX"}
+{"kafka_ts":"2025-08-23T16:37:22.020-05:00","op":"c","ts_ms":1755985041790,"customer_id":"c_bad10","customer_unique_id":"u_bad10","customer_city":"Nowhere","customer_state":"XXX"}
+{"kafka_ts":"2025-08-23T16:02:02.459-05:00","op":"c","ts_ms":1755982922370,"customer_id":"c_bad3","customer_unique_id":"u_bad3","customer_city":"Nowhere","customer_state":"XXX"}

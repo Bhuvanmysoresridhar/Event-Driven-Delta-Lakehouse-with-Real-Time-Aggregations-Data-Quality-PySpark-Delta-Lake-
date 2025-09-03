@@ -1,0 +1,145 @@
+{
+  "success": false,
+  "results": [
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "customer_id",
+          "result_format": "SUMMARY"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 11,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_index_list": null
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_message": null,
+        "exception_traceback": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "column": "customer_id",
+          "result_format": "SUMMARY"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 11,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_counts": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_message": null,
+        "exception_traceback": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_match_regex",
+        "kwargs": {
+          "column": "customer_state",
+          "regex": "^[A-Z]{2}$",
+          "result_format": "SUMMARY"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 11,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_count": 6,
+        "unexpected_percent": 54.54545454545454,
+        "unexpected_percent_total": 54.54545454545454,
+        "unexpected_percent_nonmissing": 54.54545454545454,
+        "partial_unexpected_list": [
+          "XXX",
+          "XXX",
+          "XXX",
+          "XXX",
+          "XXX",
+          "XXX"
+        ],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_counts": [
+          {
+            "value": "XXX",
+            "count": 6
+          }
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_message": null,
+        "exception_traceback": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_table_row_count_to_be_between",
+        "kwargs": {
+          "min_value": 1,
+          "result_format": "SUMMARY"
+        },
+        "meta": {}
+      },
+      "result": {
+        "observed_value": 11
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_message": null,
+        "exception_traceback": null
+      }
+    }
+  ],
+  "evaluation_parameters": {},
+  "statistics": {
+    "evaluated_expectations": 4,
+    "successful_expectations": 3,
+    "unsuccessful_expectations": 1,
+    "success_percent": 75.0
+  },
+  "meta": {
+    "great_expectations_version": "0.17.21",
+    "expectation_suite_name": "default",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2025-09-02T19:36:32.985390-05:00"
+    },
+    "batch_kwargs": {
+      "ge_batch_id": "09d29bd2-885e-11f0-aea9-c22701479fa0"
+    },
+    "batch_markers": {},
+    "batch_parameters": {},
+    "validation_time": "20250903T003632.985346Z",
+    "expectation_suite_meta": {
+      "great_expectations_version": "0.17.21"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "pg-olist-connector",
+    "config": {
+      "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+      "database.hostname": "postgres",
+      "database.port": "5432",
+      "database.user": "olist",
+      "database.password": "olistpw",
+      "database.dbname": "olist",
+      "plugin.name": "pgoutput",
+      "slot.name": "olist_slot",
+      "publication.autocreate.mode": "filtered",
+      "table.include.list": "public.customers,public.products,public.orders,public.order_items",
+      "topic.prefix": "olist",
+      "include.schema.changes": "false",
+      "tombstones.on.delete": "false",
+      "decimal.handling.mode": "string",
+      "max.batch.size": "2048",
+      "poll.interval.ms": "500"
+    }
+  }
+  

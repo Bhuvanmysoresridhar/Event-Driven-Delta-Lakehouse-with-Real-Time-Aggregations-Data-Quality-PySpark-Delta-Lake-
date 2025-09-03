@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "statistics": {
+    "evaluated_expectations": 9,
+    "successful_expectations": 9,
+    "unsuccessful_expectations": 0,
+    "success_percent": 100.0
+  },
+  "results": [
+    {
+      "expectation": "expect_table_row_count_to_be_between",
+      "success": true
+    },
+    {
+      "expectation": "expect_compound_columns_to_be_unique",
+      "success": true
+    },
+    {
+      "expectation": "expect_column_to_exist",
+      "success": true
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true
+    },
+    {
+      "expectation": "expect_column_to_exist",
+      "success": true
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "success": true
+    },
+    {
+      "expectation": "expect_column_values_to_be_in_set",
+      "success": true
+    },
+    {
+      "expectation": "expect_column_to_exist",
+      "success": true
+    },
+    {
+      "expectation": "expect_column_values_to_be_between",
+      "success": true
+    }
+  ]
+}
