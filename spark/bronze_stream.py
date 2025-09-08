@@ -42,6 +42,8 @@ df = raw.select(
     col("key").cast("string").alias("k"),
     col("value").cast("string").alias("v"),
     col("timestamp").alias("kafka_ts"),
+    col("partition").alias("kafka_partition"),  
+    col("offset").alias("kafka_offset"), 
 )
 
 query = (
@@ -51,6 +53,7 @@ query = (
     .option("checkpointLocation", CHECKPOINT_PATH)
     .option("path", BRONZE_PATH)
     .trigger(processingTime="15 seconds")
+    .option("mergeSchema", "true")
     .start()
 )
 
